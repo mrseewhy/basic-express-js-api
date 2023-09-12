@@ -14,7 +14,7 @@ const daysOfWeek = [
 const currentDay = daysOfWeek[new Date().getDay()];
 
 app.get("/", (req, res) => {
-  res.send("Home Page");
+  res.send("Home Page go to /api for some action");
 });
 
 app.get("/api", (req, res) => {
