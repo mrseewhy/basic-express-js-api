@@ -34,8 +34,8 @@ app.get("/api", (req, res) => {
 
   // Define other information
   const githubFileUrl =
-    "https://github.com/username/repo/blob/main/file_name.ext";
-  const githubRepoUrl = "https://github.com/username/repo";
+    "https://github.com/mrseewhy/basic-express-js-api/blob/main/server.js";
+  const githubRepoUrl = "https://github.com/mrseewhy/basic-express-js-api";
   const statusCode = 200;
 
   // Create the JSON response
@@ -51,18 +51,6 @@ app.get("/api", (req, res) => {
 
   // Send the JSON response
   res.json(jsonResponse);
-});
-
-app.get("/api/json", (req, res) => {
-  res.json({
-    slack_name: "example_name",
-    current_day: "Monday",
-    utc_time: "2023-08-21T15:04:05Z",
-    track: "backend",
-    github_file_url: "https://github.com/username/repo/blob/main/file_name.ext",
-    github_repo_url: "https://github.com/username/repo",
-    status_code: 200,
-  });
 });
 
 const port = 9000;
